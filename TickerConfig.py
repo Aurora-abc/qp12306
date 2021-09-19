@@ -9,7 +9,7 @@ TICKET_TYPE = 2
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-12-25"
+    "2021-09-30"
 ]
 # 预售放票时间, 如果是捡漏模式，可以忽略此操作
 OPEN_TIME = "12:43:00"
@@ -18,13 +18,13 @@ OPEN_TIME = "12:43:00"
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = []
+STATION_TRAINS = ["k609"]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "杭州"
+FROM_STATION = "北京"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "商丘"
+TO_STATION = "平遥"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -36,7 +36,7 @@ TO_STATION = "商丘"
 # "硬座",
 # "无座",
 # "动卧",
-SET_TYPE = ["二等座"]
+SET_TYPE = ["硬卧"]
 
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
 # bool
@@ -45,14 +45,15 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = [""]
+TICKET_PEOPLES = ["宋文鹏"]
 
 # 12306登录账号
 USER = "不需要配置aa"
 PWD = "不需要配置"
-tk = ""
-RAIL_EXPIRATION = "1608974698285"
-RAIL_DEVICEID = "gtJfNuBFUBPOakMf1Ujs_h7pUWCjoJik-SsmL78AOHgmfFki0edSZmxdwyuEi4Hpj94MAAu-JKtQNIZA8fSh_kwlHBRt7mAcG9lO5NXcJIfo05u8gr3_mwCbhwUFBXOeTl6GuJpTke-5_s-LU1mtZWMbIGXJbAtN"
+tk = "CuTvtkcTq-YWWV7A-aCpQha2H1B8uXp7_-NE0oyO52A1pw1w0"
+#JSESSIONID=B6ADD1561261808FE565EC8BBB180715; RAIL_EXPIRATION=1632286690657; RAIL_DEVICEID=NIbR62nzk37emJjXrDS51JivU4Q6JVYd9lXTWDmQ_GhJeDIgEILJh1l3M0F596b65U0Q90ghK95R8o5UoMw67yN7E49mfP7Z6PZUIHUdkgPWzmxSakwn7WIJKCptQOSxFoxk9wi7LhHSmVeAXJoukWq2xLduDie2; highContrastMode=defaltMode; guidesStatus=off; cursorStatus=off; BIGipServerpassport=786956554.50215.0000; BIGipServerpool_passport=266600970.50215.0000; route=6f50b51faa11b987e576cdb301e545c4; BIGipServerotn=1708720394.24610.0000
+RAIL_EXPIRATION = "1632286690657"
+RAIL_DEVICEID = "NIbR62nzk37emJjXrDS51JivU4Q6JVYd9lXTWDmQ_GhJeDIgEILJh1l3M0F596b65U0Q90ghK95R8o5UoMw67yN7E49mfP7Z6PZUIHUdkgPWzmxSakwn7WIJKCptQOSxFoxk9wi7LhHSmVeAXJoukWq2xLduDie2"
 
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
